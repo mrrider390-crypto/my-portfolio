@@ -215,10 +215,23 @@ footer {
         justify-content: center;
     }
 
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding-top: 60px;
+    hero {
+    padding-top: 120px;
+}
+
+.hero .left {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.social-links {
+    justify-content: center;
+    margin-top: 20px;
+}
     }
 
     .left h1 {
@@ -257,7 +270,7 @@ footer {
     text-decoration: underline;
 }
 
-}/* Smooth page animation */
+/* Smooth page animation */
 body {
     background: #0f172a;
     color: white;
@@ -341,4 +354,30 @@ button:hover {
 .skills-list span:hover {
     transform: translateY(-6px) scale(1.05);
     box-shadow: 0 8px 20px rgba(103, 232, 249, 0.25);
+}.social-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+.social-links a:first-child {
+    color: #E1306C;
+}
+
+.social-links a:last-child {
+    color: #FFFC00;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 0 10px currentColor);
 }
